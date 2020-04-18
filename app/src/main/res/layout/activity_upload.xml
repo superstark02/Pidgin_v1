@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+
+    <ImageView
+        android:id="@+id/passportsize_photo"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/user_image" />
+
+    <EditText
+        android:id="@+id/photo_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Please provide name of the Image."
+        android:layout_marginHorizontal="20dp"/>
+
+    <Button
+        android:id="@+id/choose_photo"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Choose image" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imageView22"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_class_black_24dp" />
+    <EditText
+        android:id="@+id/nameOfSecondImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Please provide name of the Image."
+        android:layout_marginHorizontal="20dp"/>
+
+    <Button
+        android:id="@+id/choose_document"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose image" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="upload and proceed" />
+
+</LinearLayout>
